@@ -24,14 +24,18 @@ import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;
+import android.text.method.ScrollingMovementMethod;
+import android.transition.TransitionManager;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -44,6 +48,8 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.browser.customtabs.CustomTabsIntent;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.core.widget.NestedScrollView;
 
 import com.android.volley.DefaultRetryPolicy;
@@ -62,6 +68,7 @@ import org.json.JSONObject;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
@@ -81,9 +88,28 @@ import io.noties.markwon.html.HtmlPlugin;
 import io.noties.markwon.image.AsyncDrawable;
 import io.noties.markwon.image.picasso.PicassoImagesPlugin;
 
+import android.os.Handler;
+import android.os.Looper;
+import android.widget.EditText;
+import android.widget.Button;
+
+import io.actifit.fitnesstracker.actifitfitnesstracker.AiService;
+import io.actifit.fitnesstracker.actifitfitnesstracker.AiResponse;
+import android.widget.Spinner;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 public class PostSteemitActivity extends BaseActivity implements View.OnClickListener{
+
+    private boolean isEditorExpanded = false;
+
+    //private NestedScrollView nestedScrollView;
+    private EditText postTextEditor;
+    private Button expandEditorBtn;
+
 
     private StepsDBHelper mStepsDBHelper;
     private String notification = "";
@@ -150,10 +176,10 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
     MultiSelectionSpinner activityTypeSelector;
 
     String accountUsername, accountPostingKey, accountActivityCount, finalPostTitle, finalPostTags,
-        finalPostContent;
+            finalPostContent;
     int selectedActivityCount;
     String heightVal, weightVal, waistVal, chestVal, thighsVal, bodyFatVal,
-        heightUnit, weightUnit, waistUnit, chestUnit, thighsUnit;
+            heightUnit, weightUnit, waistUnit, chestUnit, thighsUnit;
 
     String selectedActivitiesVal;
 
@@ -222,7 +248,7 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
         if (type==0) {
             intent.setType("image/*");
             imagePickerLauncher.launch(Intent.createChooser(intent, getString(R.string.select_img_title)));
-       }else{
+        }else{
             intent.setType("video/*");
             videoPickerLauncher.launch(Intent.createChooser(intent, getString(R.string.select_img_title)));
         }
@@ -393,12 +419,55 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
+
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_steemit);
 
+        nestedScrollView = findViewById(R.id.nestedScrollView);
+        postTextEditor = findViewById(R.id.steemit_post_text);
+        expandEditorBtn = findViewById(R.id.btn_expand_editor);
+
+        Button expandBtn = findViewById(R.id.btn_expand_editor);
+        EditText postText = findViewById(R.id.steemit_post_text);
+        NestedScrollView scrollView = findViewById(R.id.nestedScrollView);
+        LinearLayout postContainer = findViewById(R.id.post_steemit_container);
+
+        expandBtn.setOnClickListener(v -> {
+            isEditorExpanded = !isEditorExpanded;
+            toggleEditorMode(isEditorExpanded);
+        });
+
+
+
+
+
+
+
+//        expandEditorBtn.setOnClickListener(v -> {
+//            if (!isEditorExpanded) {
+//                // Expand
+//                nestedScrollView.setLayoutParams(new LinearLayout.LayoutParams(
+//                        ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+//                postTextEditor.setMinLines(20);
+//                postTextEditor.setMaxLines(Integer.MAX_VALUE);
+//                expandEditorBtn.setText("\uf066"); // FontAwesome close icon
+//                isEditorExpanded = true;
+//            } else {
+//                // Collapse
+//                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+//                        ViewGroup.LayoutParams.MATCH_PARENT, 0);
+//                params.weight = 1;
+//                nestedScrollView.setLayoutParams(params);
+//                postTextEditor.setMinLines(6);
+//                postTextEditor.setMaxLines(6);
+//                expandEditorBtn.setText("\uf065"); // Expand icon again
+//                isEditorExpanded = false;
+//            }
+//        });
 
         /*Toolbar postToolbar = findViewById(R.id.post_toolbar);
         setSupportActionBar(postToolbar);*/
@@ -476,10 +545,9 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
         // MarkedView mdView = new MarkedView(this);
 
 
+        EditText contentField = findViewById(R.id.steemit_post_text);
 
 
-
-        //hook to event of adjusting color of the title point
         steemitPostTitle.addTextChangedListener(new TextWatcher() {
 
             @Override
@@ -551,8 +619,11 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
                                 view.getContext().startActivity(intent);
                             }
                         });
+
+
+
                     }
-                })
+                })//note: onCreate ends here
 
                 //handle images via available picasso
                 //.usePlugin(PicassoImagesPlugin.create(Picasso.get()))
@@ -604,7 +675,7 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
                         Log.e(MainActivity.TAG, "error ontextchanged markwon");
                     }
 
-                    //store current text
+                    //store my current text
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putString("steemPostContent",
                             steemitPostContent.getText().toString());
@@ -618,16 +689,14 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
                     contentCountRef.setTextColor(getResources().getColor(R.color.actifitDarkGreen));
                     charCount.setTextColor(getResources().getColor(R.color.actifitDarkGreen));
                 }
-                //set text count
+                //show count
                 charCount.setText(s.length()+"");
 
 
             }
         });
 
-        //try to load any previously selected vid
 
-        // Retrieve the JSON string from SharedPreferences
         try {
             String json = sharedPreferences.getString("selVidEntry", "");
             // Convert back to UploadedVideoModel
@@ -643,8 +712,7 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
             steemitPostContent.setText(priorContent);
 
         }else{
-            //pick random hint
-            // Generate a random integer between 1 and 6
+            //Generate a random integer between 1 and 6
             int minValue = 1;
             int maxValue = parseInt(getString(R.string.report_text_hint_count));
             int randomNumber = random.nextInt(maxValue - minValue + 1) + minValue;
@@ -798,7 +866,7 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
         postTitle += " "+new SimpleDateFormat("MMMM d yyyy").format(mCalendar.getTime());
 
         //postTitle += String.valueOf(mCalendar.get(Calendar.MONTH)+1)+" " +
-                //String.valueOf(mCalendar.get(Calendar.DAY_OF_MONTH))+"/"+String.valueOf(mCalendar.get(Calendar.YEAR));
+        //String.valueOf(mCalendar.get(Calendar.DAY_OF_MONTH))+"/"+String.valueOf(mCalendar.get(Calendar.YEAR));
         steemitPostTitle.setText(postTitle);
 
         //initializing activity options
@@ -1156,8 +1224,8 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
         private final Context context;
         private Activity currentActivity;
         public PostSteemitRequest(Context c, Activity currentActivity){
-                this.context = c;
-                this.currentActivity = currentActivity;
+            this.context = c;
+            this.currentActivity = currentActivity;
         }
         protected void onPreExecute(){
             //create a new progress dialog to show action is underway
@@ -1497,7 +1565,7 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
                 //use test url only if testing mode is on
                 String urlStr = getString(R.string.test_api_url);
                 //if (getString(R.string.test_mode).equals("off")) {
-                    urlStr = getString(R.string.api_url_new);
+                urlStr = getString(R.string.api_url_new);
                 //}
 
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
@@ -1562,8 +1630,8 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
             }catch (Exception e){
 
                 //display proper notification
-    //            notification = getString(R.string.failed_post);
-    //            displayNotification(notification, progress, context, currentActivity, "");
+                //            notification = getString(R.string.failed_post);
+                //            displayNotification(notification, progress, context, currentActivity, "");
                 try {
                     displayNotification(e.getMessage(), progress, context, currentActivity, "", "");
                 }catch(Exception inner){
@@ -1625,6 +1693,7 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
             mStepsDBHelper.manualInsertStepsEntry(trackedActivityCount);
 
         }
+
 
 
         //we need to check first if we have a charity setup
@@ -1695,8 +1764,8 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
 
             AlertDialog.Builder builder = new AlertDialog.Builder(steemit_post_context);
             builder.setMessage(getString(R.string.current_workout_going_charity) + " "
-                    + currentCharityDisplayName + " "
-                    + getString(R.string.current_workout_settings_based))
+                            + currentCharityDisplayName + " "
+                            + getString(R.string.current_workout_settings_based))
                     .setPositiveButton(getString(R.string.yes_button), dialogClickListener)
                     .setNegativeButton(getString(R.string.no_button), dialogClickListener).show();
         }else {
@@ -1744,6 +1813,91 @@ public class PostSteemitActivity extends BaseActivity implements View.OnClickLis
             new PostSteemitRequest(steemit_post_context, currentActivity).execute();
         }
     }
+
+
+    private void toggleEditorMode(boolean expand) {
+        TransitionManager.beginDelayedTransition((ViewGroup) findViewById(R.id.cLayout));
+        EditText postText = findViewById(R.id.steemit_post_text);
+        postText.setMovementMethod(new ScrollingMovementMethod());
+        NestedScrollView scrollView = findViewById(R.id.nestedScrollView);
+        TextView previewLabel = findViewById(R.id.steemit_post_preview_lbl);
+        TextView previewText = findViewById(R.id.md_view);
+        LinearLayout btnContainer = findViewById(R.id.btn_container);
+
+
+        if (expand) {
+            postText.setMinLines(20);
+            postText.setFocusable(true);
+            postText.setFocusableInTouchMode(true);
+            postText.setMaxLines(Integer.MAX_VALUE);
+            postText.setMovementMethod(new ScrollingMovementMethod());
+
+
+            ConstraintLayout.LayoutParams editorParams = new ConstraintLayout.LayoutParams(
+                    ConstraintLayout.LayoutParams.MATCH_PARENT,
+                    ConstraintLayout.LayoutParams.WRAP_CONTENT
+            );
+            editorParams.topToBottom = R.id.btn_container;
+            editorParams.bottomToTop = R.id.steemit_post_preview_lbl;
+            postText.setLayoutParams(editorParams);
+            ConstraintLayout.LayoutParams previewLabelParams = new ConstraintLayout.LayoutParams(
+                    ConstraintLayout.LayoutParams.MATCH_PARENT,
+                    ConstraintLayout.LayoutParams.WRAP_CONTENT
+            );
+            previewLabelParams.topToBottom = R.id.steemit_post_text;
+            previewLabel.setLayoutParams(previewLabelParams);
+
+            ConstraintLayout.LayoutParams previewTextParams = new ConstraintLayout.LayoutParams(
+                    ConstraintLayout.LayoutParams.MATCH_PARENT,
+                    ConstraintLayout.LayoutParams.WRAP_CONTENT
+            );
+            previewTextParams.topToBottom = R.id.steemit_post_preview_lbl;
+            previewTextParams.bottomToBottom = ConstraintLayout.LayoutParams.PARENT_ID;
+            previewText.setLayoutParams(previewTextParams);
+
+            ConstraintLayout layout = findViewById(R.id.cLayout);
+            for (int i = 0; i < layout.getChildCount(); i++) {
+                View child = layout.getChildAt(i);
+                if (child.getId() != R.id.btn_container &&
+                        child.getId() != R.id.steemit_post_text &&
+                        child.getId() != R.id.steemit_post_preview_lbl &&
+                        child.getId() != R.id.md_view) {
+                    child.setVisibility(View.GONE);
+                }
+            }
+            postText.clearFocus();
+            postText.setSelection(0);
+            nestedScrollView.scrollTo(0, postText.getTop());
+
+            scrollView.post(() -> scrollView.scrollTo(0, 0));
+        } else {
+            postText.setMinLines(6);
+            postText.setMaxLines(6);
+
+            ConstraintLayout.LayoutParams editorParams = new ConstraintLayout.LayoutParams(
+                    ConstraintLayout.LayoutParams.MATCH_PARENT,
+                    ConstraintLayout.LayoutParams.WRAP_CONTENT
+            );
+            editorParams.topToBottom = R.id.btn_container;
+            editorParams.bottomToTop = R.id.steemit_post_preview_lbl;
+            postText.setLayoutParams(editorParams);
+
+            ConstraintLayout layout = findViewById(R.id.cLayout);
+            for (int i = 0; i < layout.getChildCount(); i++) {
+                View child = layout.getChildAt(i);
+                child.setVisibility(View.VISIBLE);
+            }
+
+            ConstraintSet set = new ConstraintSet();
+            set.clone((ConstraintLayout) findViewById(R.id.cLayout));
+            set.applyTo((ConstraintLayout) findViewById(R.id.cLayout));
+        }
+
+        Button expandBtn = findViewById(R.id.btn_expand_editor);
+        expandBtn.setText(expand ? "\uf066" : "\uf065");
+    }
+
+
 
 }
 

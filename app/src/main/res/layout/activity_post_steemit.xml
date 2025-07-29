@@ -615,6 +615,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/post_content_container" />
 
+                <Button
+                    android:id="@+id/btn_expand_editor"
+                    style="@style/AppTheme.ActifitButton"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Expand Editor"
+                    android:fontFamily="@font/font_awesome_6_solid"
+                    android:text="\uf065" />
+
             <LinearLayout
 
                 android:layout_width="match_parent"
@@ -671,7 +680,10 @@
                 android:hint="@string/report_text_hint_1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_container" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_container"
+                android:scrollbars="vertical"
+                android:overScrollMode="ifContentScrolls"
+                android:focusableInTouchMode="true"/>
 
             <TextView
                 android:id="@+id/steemit_post_preview_lbl"
@@ -722,15 +734,16 @@
     <Button
         style="@style/AppTheme.ActifitButton"
         android:id="@+id/post_to_steem_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:ems="10"
-        android:text="@string/post_to_steem_btn_txt"
+        android:text="@string/post_button"
         android:textSize="14sp"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="40dp"
         android:clickable="true"
         android:focusable="true"
         />
+
 
 </FrameLayout>
