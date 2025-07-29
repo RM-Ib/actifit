@@ -1,4 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
+
     <string name="sending_post">Sending your post...</string>
     <string name="success_post">Your post has been successfully submitted</string>
     <string name="failed_post">There was an error submitting your post</string>
@@ -556,4 +558,26 @@
     <string name="generate_workout_plan">Generate Workout Plan</string>
     <string name="workout_plan_overview">Workout Plan Overview</string>
     <string name="exercises">Exercises</string>
+    <string name="btn_ai_suggest" tools:ignore="MissingTranslation">AI</string>
+    <string name="query_option" tools:ignore="MissingTranslation">Query</string>
+    <string name="summarize_option" tools:ignore="MissingTranslation">Summarize</string>
+    <string name="expand_option" tools:ignore="MissingTranslation">Expand</string>
+    <string name="ai_popup_title" tools:ignore="MissingTranslation">AI Assistant</string>
+    <string name="ai_hint_input" tools:ignore="MissingTranslation">Enter your content here.</string>
+    <string name="ai_preview_placeholder" tools:ignore="MissingTranslation">AI response will appear here.</string>
+    <string name="ai_suggest" tools:ignore="MissingTranslation">AI</string>
+    <string name="ai_preview_empty_warning" tools:ignore="MissingTranslation">Please enter some text first.</string>
+    <string name="ai_is_thinking" tools:ignore="MissingTranslation">[AI is thinking…]</string>
+    <string name="ai_error_prefix" tools:ignore="MissingTranslation">[AI error] </string>
+    <string name="ai_no_valid_response" tools:ignore="MissingTranslation">No valid AI response to accept.</string>
+    <string name="spinner_action_none" tools:ignore="MissingTranslation">None</string>
+    <string name="spinner_action_summarize" tools:ignore="MissingTranslation">Summarize</string>
+    <string name="spinner_action_expand" tools:ignore="MissingTranslation">Expand</string>
+
+
+
+
+
+
 </resources>
+
