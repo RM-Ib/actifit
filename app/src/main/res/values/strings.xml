@@ -556,4 +556,5 @@
     <string name="generate_workout_plan">Generate Workout Plan</string>
     <string name="workout_plan_overview">Workout Plan Overview</string>
     <string name="exercises">Exercises</string>
+    <string name="post_button" tools:ignore="MissingTranslation">Post</string>
 </resources>
