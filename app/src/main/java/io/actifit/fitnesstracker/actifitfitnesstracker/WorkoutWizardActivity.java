@@ -502,6 +502,8 @@ public class WorkoutWizardActivity extends BaseActivity
                                 public void onSuccess() {
                                     runOnUiThread(() -> {
                                         Toast.makeText(WorkoutWizardActivity.this, "Workout plan saved successfully!", Toast.LENGTH_SHORT).show();
+                                        fetchAndDisplayUserWorkouts();
+                                        displayWorkoutPlan(generatedPlan);//added these two lines
                                         // Enable button if you disabled it
                                         // findViewById(R.id.generateButton).setEnabled(true);
                                     });
