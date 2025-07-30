@@ -1,4 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
+
     <string name="sending_post">Sending your post...</string>
     <string name="success_post">Your post has been successfully submitted</string>
     <string name="failed_post">There was an error submitting your post</string>
@@ -556,5 +558,22 @@
     <string name="generate_workout_plan">Generate Workout Plan</string>
     <string name="workout_plan_overview">Workout Plan Overview</string>
     <string name="exercises">Exercises</string>
-    <string name="post_button" tools:ignore="MissingTranslation">Post</string>
+    <string name="btn_ai_suggest" >AI</string>
+    <string name="query_option" >Query</string>
+    <string name="summarize_option" >Summarize</string>
+    <string name="expand_option" >Expand</string>
+    <string name="ai_popup_title" >AI Assistant</string>
+    <string name="ai_hint_input">Enter your content here.</string>
+    <string name="ai_preview_placeholder">AI response will appear here.</string>
+    <string name="ai_suggest">AI</string>
+    <string name="ai_preview_empty_warning" >Please enter some text first.</string>
+    <string name="ai_is_thinking">[AI is thinking…]</string>
+    <string name="ai_error_prefix">[AI error] </string>
+    <string name="ai_no_valid_response">No valid AI response to accept.</string>
+    <string name="spinner_action_none">None</string>
+    <string name="spinner_action_summarize">Summarize</string>
+    <string name="spinner_action_expand">Expand</string>
+    <string name="post_button">Post</string>
+
 </resources>
+

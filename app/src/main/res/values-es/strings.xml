@@ -427,7 +427,7 @@
     <string name="Share">Compartir</string>
     <string name="successful_referrals_txt">Recomendaciones exitosas</string>
     <string name="referral_link_txt">Tu enlace de recomendación</string>
-   <string name="referral_title">¡Únete a Actifit AHORA - El proyecto social Move2Earn!</string>
+    <string name="referral_title">¡Únete a Actifit AHORA - El proyecto social Move2Earn!</string>
     <string name="referral_description">Actifit te recompensa por rastrear tu actividad diaria, ganando múltiples activos criptográficos.</string>
     <string name="post_title">¡Mira mi nueva publicación genial en Actifit, el proyecto social Move2Earn!</string>
     <string name="post_title_other">¡Mira esta publicación genial en Actifit, el proyecto social Move2Earn!</string>
@@ -444,7 +444,7 @@
     <string name="daily_5k_reward">Recompensa adicional de 5K</string>
     <string name="daily_7k_reward">Recompensa adicional de 7K</string>
     <string name="daily_10k_reward">Recompensa adicional de 10K</string>
-   <string name="voting_on">Votando</string>
+    <string name="voting_on">Votando</string>
     <string name="select_option">Primero seleccione una opción</string>
     <string name="voters_list">Lista de votantes</string>
     <string name="reply_action">Responder</string>
@@ -464,7 +464,7 @@
     <string name="not_enough_afit_balance">No tienes suficientes AFIT para comprar </string>
     <string name="logout_confirmation">¿Estás seguro de que quieres cerrar sesión?</string>
     <string name="gadgets_description">Los gadgets virtuales te permiten aumentar tus ganancias diarias. Al comprar y activar gadgets, puedes ganar tipos adicionales de recompensas para ti mismo (o tu amigo) en todas las recompensas de Actifit.</string>
-   <string name="ad_not_ready">El anuncio recompensado aún no estaba listo.</string>
+    <string name="ad_not_ready">El anuncio recompensado aún no estaba listo.</string>
     <string name="err_load_ad">error al cargar el anuncio</string>
     <string name="wave_hint_1">Comparte una actualización rápida...</string>
     <string name="wave_preview">Vista previa</string>
@@ -548,4 +548,20 @@
     <string name="generate_workout_plan">Generar Plan de Entrenamiento</string>
     <string name="workout_plan_overview">Resumen del Plan de Entrenamiento</string>
     <string name="exercises">Ejercicios</string>
+    <string name="btn_ai_suggest">IA</string>
+    <string name="query_option">Consulta</string>
+    <string name="summarize_option">Resumir</string>
+    <string name="expand_option">Expandir</string>
+    <string name="ai_popup_title">Asistente de IA</string>
+    <string name="ai_hint_input">Ingresa tu contenido aquí.</string>
+    <string name="ai_preview_placeholder">La respuesta de la IA aparecerá aquí.</string>
+    <string name="ai_suggest">IA</string>
+    <string name="ai_preview_empty_warning">Por favor ingresa algo de texto primero.</string>
+    <string name="ai_is_thinking">[La IA está pensando…]</string>
+    <string name="ai_error_prefix">[Error de IA] </string>
+    <string name="ai_no_valid_response">No hay respuesta válida de IA para aceptar.</string>
+    <string name="spinner_action_none">Ninguno</string>
+    <string name="spinner_action_summarize">Resumir</string>
+    <string name="spinner_action_expand">Expandir</string>
+    <string name="post_button">Publicar</string>
 </resources>

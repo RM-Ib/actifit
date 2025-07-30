@@ -544,4 +544,20 @@
     <string name="generate_workout_plan">Antrenman Planı Oluştur</string>
     <string name="workout_plan_overview">Antrenman Planına Genel Bakış</string>
     <string name="exercises">Egzersizler</string>
+    <string name="btn_ai_suggest">YZ</string>
+    <string name="query_option">Sorgu</string>
+    <string name="summarize_option">Özetle</string>
+    <string name="expand_option">Genişlet</string>
+    <string name="ai_popup_title">YZ Asistanı</string>
+    <string name="ai_hint_input">İçeriğinizi buraya girin.</string>
+    <string name="ai_preview_placeholder">YZ cevabı burada görünecek.</string>
+    <string name="ai_suggest">YZ</string>
+    <string name="ai_preview_empty_warning">Lütfen önce biraz metin girin.</string>
+    <string name="ai_is_thinking">[YZ düşünüyor...]</string>
+    <string name="ai_error_prefix">[YZ hatası] </string>
+    <string name="ai_no_valid_response">Kabul edilecek geçerli bir YZ cevabı yok.</string>
+    <string name="spinner_action_none">Yok</string>
+    <string name="spinner_action_summarize">Özetle</string>
+    <string name="spinner_action_expand">Genişlet</string>
+    <string name="post_button">Gönder</string>
 </resources>

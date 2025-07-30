@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-  <string name="app_name">Actifit</string>
-  <string name="sending_post">Verzenden van je bericht...</string>
-  <string name="success_post">Je bericht is succesvol verzonden</string>
-  <string name="failed_post">Er is een fout opgetreden bij het verzenden van je bericht</string>
-  <string name="connection_timeout">Verbinding maken duurde te lang. Probeer het opnieuw.</string>
-  <string name="default_post_title">Mijn Actifit Rapportkaart:</string>
-  <string name="error_need_select_one_activity">Je moet minstens één activiteitstype selecteren om verder te gaan</string>
-  <string name="fetching_leaderboard">Leaderboard bijwerken...</string>
-  <string name="fetching_notifications">Meldingen ophalen</string>
-  <string name="leader_no_results">Er zijn nu geen gebruikers op het leaderboard</string>
-  <string name="leader_error">Er is een fout opgetreden tijdens het ophalen van de leaderboard-lijst. Probeer het later opnieuw.</string>
-  <string name="username_missing">Log eerst in</string>
-  <string name="fetching_user_balance">Gebruikersaldo ophalen...</string>
-  <string name="metric_system">Metriek systeem</string>
-  <string name="Calisthenics">Calistenics</string>
-  <string name="StreetWorkout">Straattraining</string>
-  <string name="us_system">US Systeem</string>
-  <string name="back_exit_confirmation">Klik opnieuw op de TERUG-knop als u wilt afsluiten</string>
-  <string name="actifit_service_desc">Actifit-service om de activiteit van de gebruiker bij te houden</string>
-  <string name="actifit_reminder_service_desc">Actifit-service om de gebruiker eraan te herinneren dagelijkse rapporten te posten</string>
-  <string name="activity_today_string">Totale activiteit vandaag: </string>
-  <string name="actifit_notif_title">Actifit Rapport</string>
-  <string name="activity_today_fivek_milestone">Gefeliciteerd met het bereiken van de 5K-mijlpaal. Blijf bezig!</string>
-  <string name="activity_today_tenk_milestone">Gefeliciteerd met het bereiken van de 10K-mijlpaal. Goed gedaan!</string>
-  <string name="actifit_notif_channel">Actifit Meldingenkanaal</string>
-  <string name="actifit_notif_description">Kanaal gebruikt voor het verzenden van meldingen van de Actifit-app</string>
-  <string name="actifit_channel_ID" translatable="false">Actifit_Notif_Channel_1</string>
-  <string name="actifit_channel_remind_ID" translatable="false">Actifit_Notif_Channel_2</string>
-  <string name="actifit_channel_5k_notice" translatable="false">Actifit_Notif_Channel_3</string>
-  <string name="actifit_channel_10k_notice" translatable="false">Actifit_Notif_Channel_4</string>
-  <string name="actifit_fcm_msg_channel_id" translatable="false">Actifit_FCM_Msg_Chan_1</string>
-  <string name="aggr_mode_note">*Schakel deze instelling in als u problemen ondervindt met de app bij het volgen van uw beweging terwijl het scherm is vergrendeld. De instelling kan mogelijk uw batterij sneller leegmaken.</string>
-  <string name="one_post_per_day_error">Je kunt maar één keer per dag posten</string>
-  <string name="min_char_count_error">Je moet je activiteit in minstens </string>
-  <string name="characters_plural_label">tekens</string>
-  <string name="social_title_desc">Sociale Actifit Rapporten</string>
-  <string name="waves_description">Waves door Ecency en Snaps door Peakd en Threads door InLeo zijn aanvullende korte en snelle communicatiemiddelen op de Hive-blockchain. Neem deel aan anderen, deel je updates terwijl je je dagelijkse reizen doormaakt, en verdien ook wat extra beloningen.</string>
-  <string name="social_description">Verbind je met de Actifit-community via hun dagelijkse rapporten. <br/> Motiveer jezelf en anderen. <br/> Verhoog je beloningen door te interacteren via reacties &amp; upvotes. <br/> Creëer je ultieme sociale steun.</string>
+	<string name="app_name">Actifit</string>
+	<string name="sending_post">Verzenden van je bericht...</string>
+	<string name="success_post">Je bericht is succesvol verzonden</string>
+	<string name="failed_post">Er is een fout opgetreden bij het verzenden van je bericht</string>
+	<string name="connection_timeout">Verbinding maken duurde te lang. Probeer het opnieuw.</string>
+	<string name="default_post_title">Mijn Actifit Rapportkaart:</string>
+	<string name="error_need_select_one_activity">Je moet minstens één activiteitstype selecteren om verder te gaan</string>
+	<string name="fetching_leaderboard">Leaderboard bijwerken...</string>
+	<string name="fetching_notifications">Meldingen ophalen</string>
+	<string name="leader_no_results">Er zijn nu geen gebruikers op het leaderboard</string>
+	<string name="leader_error">Er is een fout opgetreden tijdens het ophalen van de leaderboard-lijst. Probeer het later opnieuw.</string>
+	<string name="username_missing">Log eerst in</string>
+	<string name="fetching_user_balance">Gebruikersaldo ophalen...</string>
+	<string name="metric_system">Metriek systeem</string>
+	<string name="Calisthenics">Calistenics</string>
+	<string name="StreetWorkout">Straattraining</string>
+	<string name="us_system">US Systeem</string>
+	<string name="back_exit_confirmation">Klik opnieuw op de TERUG-knop als u wilt afsluiten</string>
+	<string name="actifit_service_desc">Actifit-service om de activiteit van de gebruiker bij te houden</string>
+	<string name="actifit_reminder_service_desc">Actifit-service om de gebruiker eraan te herinneren dagelijkse rapporten te posten</string>
+	<string name="activity_today_string">Totale activiteit vandaag: </string>
+	<string name="actifit_notif_title">Actifit Rapport</string>
+	<string name="activity_today_fivek_milestone">Gefeliciteerd met het bereiken van de 5K-mijlpaal. Blijf bezig!</string>
+	<string name="activity_today_tenk_milestone">Gefeliciteerd met het bereiken van de 10K-mijlpaal. Goed gedaan!</string>
+	<string name="actifit_notif_channel">Actifit Meldingenkanaal</string>
+	<string name="actifit_notif_description">Kanaal gebruikt voor het verzenden van meldingen van de Actifit-app</string>
+	<string name="actifit_channel_ID" translatable="false">Actifit_Notif_Channel_1</string>
+	<string name="actifit_channel_remind_ID" translatable="false">Actifit_Notif_Channel_2</string>
+	<string name="actifit_channel_5k_notice" translatable="false">Actifit_Notif_Channel_3</string>
+	<string name="actifit_channel_10k_notice" translatable="false">Actifit_Notif_Channel_4</string>
+	<string name="actifit_fcm_msg_channel_id" translatable="false">Actifit_FCM_Msg_Chan_1</string>
+	<string name="aggr_mode_note">*Schakel deze instelling in als u problemen ondervindt met de app bij het volgen van uw beweging terwijl het scherm is vergrendeld. De instelling kan mogelijk uw batterij sneller leegmaken.</string>
+	<string name="one_post_per_day_error">Je kunt maar één keer per dag posten</string>
+	<string name="min_char_count_error">Je moet je activiteit in minstens </string>
+	<string name="characters_plural_label">tekens</string>
+	<string name="social_title_desc">Sociale Actifit Rapporten</string>
+	<string name="waves_description">Waves door Ecency en Snaps door Peakd en Threads door InLeo zijn aanvullende korte en snelle communicatiemiddelen op de Hive-blockchain. Neem deel aan anderen, deel je updates terwijl je je dagelijkse reizen doormaakt, en verdien ook wat extra beloningen.</string>
+	<string name="social_description">Verbind je met de Actifit-community via hun dagelijkse rapporten. <br/> Motiveer jezelf en anderen. <br/> Verhoog je beloningen door te interacteren via reacties &amp; upvotes. <br/> Creëer je ultieme sociale steun.</string>
 	<string name="vids_list_description">De onderstaande lijst bevat alle video\'s die je eerder hebt geüpload en ingediend. Om een van deze video\'s op te nemen in je Actifit-rapportinhoud, moet je op het scherm "Post &amp; Earn" staan en moet de status van je video klaar zijn om te publiceren. Je kunt op de vernieuwingsknop klikken om de status van alle video\'s te vernieuwen.</string>
 	<string name="upload_vid_description">Gebruik een van de onderstaande opties (opnemen of uploaden) om een video te uploaden en deze in te dienen om op te nemen in je huidige geüploade videolijst. Raadpleeg de infoknop naast de geüploade videolijst voor meer informatie.</string>
 	<string name="chat_title_desc">Kletspraat</string>
@@ -459,7 +459,7 @@
 	<string name="not_eligible">U komt nog niet in aanmerking voor deze beloning</string>
 	<string name="rewards_processing"> Beloningscyclus bezig - Beloningen verdelen </string>
 	<string name="not_enough_afit_balance">U heeft niet genoeg AFIT om te kopen</string>
-    <string name="logout_confirmation">Weet u zeker dat u zich wilt afmelden?</string>
+	<string name="logout_confirmation">Weet u zeker dat u zich wilt afmelden?</string>
 	<string name="gadgets_description">Virtuele gadgets stellen u in staat om uw dagelijkse inkomsten te verhogen. Door gadgets te kopen en te activeren, kunt u extra verschillende soorten beloningen verdienen voor uzelf (of uw vriend) binnen Actifit-beloningen.</string>
 	<string name="ad_not_ready">De beloonde advertentie was nog niet klaar.</string>
 	<string name="err_load_ad">Advertentie laden mislukt</string>
@@ -519,30 +519,46 @@
 	<string name="fitbit_sync_btn" translatable="false">\uf0ed</string>
 	<string name="switch_settings_btn" translatable="false">\uf362</string>
 	<string name="extra_beneficiary">Aanvullende begunstigde</string>
-    <string name="setting_dark_mode_label">Donkere modus</string>
+	<string name="setting_dark_mode_label">Donkere modus</string>
 	<string name="icon_sun_desc">Zonpictogram</string>
 	<string name="icon_moon_desc">Maanpictogram</string>
-    <string name="skip">overslaan</string>
-    <string name="daily">Dagelijks</string>
+	<string name="skip">overslaan</string>
+	<string name="daily">Dagelijks</string>
 	<string name="hourly">Elk uur</string>
-    <string name="error_transaction">Er is een fout opgetreden bij de transactie</string>
+	<string name="error_transaction">Er is een fout opgetreden bij de transactie</string>
 	<string name="proceed">Doorgaan</string>
-    <string name="saved_workouts">Opgeslagen Workouts</string>
-    <string name="workout_planning">Workout Planning</string>
-    <string name="no_saved_workouts_yet">Nog geen opgeslagen workouts.</string>
-    <string name="retry_loading_workouts">Workouts opnieuw laden</string>
-    <string name="generate_new_workout">Nieuwe Workout genereren</string>
-    <string name="workout_name">Workout Naam:</string>
-    <string name="enter_a_name_for_your_workout">Voer een naam in voor je workout</string>
-    <string name="fitness_goal">Fitness Doel:</string>
-    <string name="experience_level">Ervaringsniveau:</string>
-    <string name="weekly_time">Wekelijkse Tijd:</string>
-    <string name="workout_frequency">Workout Frequentie:</string>
-    <string name="preferred_workout_style">Voorkeurs Workout Stijl:</string>
-    <string name="equipment">Apparatuur:</string>
-    <string name="physical_limitations">Fysieke Beperkingen:</string>
-    <string name="enter_details_for_other_limitations">Voer details in voor \'Overige\' beperkingen</string>
-    <string name="generate_workout_plan">Workout Plan genereren</string>
-    <string name="workout_plan_overview">Overzicht Workout Plan</string>
-    <string name="exercises">Oefeningen</string>
+	<string name="saved_workouts">Opgeslagen Workouts</string>
+	<string name="workout_planning">Workout Planning</string>
+	<string name="no_saved_workouts_yet">Nog geen opgeslagen workouts.</string>
+	<string name="retry_loading_workouts">Workouts opnieuw laden</string>
+	<string name="generate_new_workout">Nieuwe Workout genereren</string>
+	<string name="workout_name">Workout Naam:</string>
+	<string name="enter_a_name_for_your_workout">Voer een naam in voor je workout</string>
+	<string name="fitness_goal">Fitness Doel:</string>
+	<string name="experience_level">Ervaringsniveau:</string>
+	<string name="weekly_time">Wekelijkse Tijd:</string>
+	<string name="workout_frequency">Workout Frequentie:</string>
+	<string name="preferred_workout_style">Voorkeurs Workout Stijl:</string>
+	<string name="equipment">Apparatuur:</string>
+	<string name="physical_limitations">Fysieke Beperkingen:</string>
+	<string name="enter_details_for_other_limitations">Voer details in voor \'Overige\' beperkingen</string>
+	<string name="generate_workout_plan">Workout Plan genereren</string>
+	<string name="workout_plan_overview">Overzicht Workout Plan</string>
+	<string name="exercises">Oefeningen</string>
+	<string name="btn_ai_suggest">AI</string>
+	<string name="query_option">Vraag</string>
+	<string name="summarize_option">Samenvatten</string>
+	<string name="expand_option">Uitbreiden</string>
+	<string name="ai_popup_title">AI Assistent</string>
+	<string name="ai_hint_input">Voer hier je inhoud in.</string>
+	<string name="ai_preview_placeholder">AI-antwoord verschijnt hier.</string>
+	<string name="ai_suggest">AI</string>
+	<string name="ai_preview_empty_warning">Voer eerst wat tekst in.</string>
+	<string name="ai_is_thinking">[AI is aan het denken...]</string>
+	<string name="ai_error_prefix">[AI fout] </string>
+	<string name="ai_no_valid_response">Geen geldige AI-antwoord om te accepteren.</string>
+	<string name="spinner_action_none">Geen</string>
+	<string name="spinner_action_summarize">Samenvatten</string>
+	<string name="spinner_action_expand">Uitbreiden</string>
+	<string name="post_button">Plaatsen</string>
 </resources>

@@ -549,4 +549,21 @@
     <string name="generate_workout_plan">Trainingsplan generieren</string>
     <string name="workout_plan_overview">Überblick Trainingsplan</string>
     <string name="exercises">Übungen</string>
+    <string name="btn_ai_suggest">KI</string>
+    <string name="query_option">Anfrage</string>
+    <string name="summarize_option">Zusammenfassen</string>
+    <string name="expand_option">Erweitern</string>
+    <string name="ai_popup_title">KI-Assistent</string>
+    <string name="ai_hint_input">Geben Sie hier Ihren Inhalt ein.</string>
+    <string name="ai_preview_placeholder">KI-Antwort erscheint hier.</string>
+    <string name="ai_suggest">KI</string>
+    <string name="ai_preview_empty_warning">Bitte geben Sie zuerst einen Text ein.</string>
+    <string name="ai_is_thinking">[KI denkt…]</string>
+    <string name="ai_error_prefix">[KI-Fehler] </string>
+    <string name="ai_no_valid_response">Keine gültige KI-Antwort zum Akzeptieren.</string>
+    <string name="spinner_action_none">Keine</string>
+    <string name="spinner_action_summarize">Zusammenfassen</string>
+    <string name="spinner_action_expand">Erweitern</string>
+    <string name="post_button">Posten</string>
+
 </resources>

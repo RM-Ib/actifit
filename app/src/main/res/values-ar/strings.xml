@@ -419,118 +419,118 @@
     <string name="user_rank_title">رتبة المستخدم</string>
     <string name="user_rank_web">تفاصيل رتبة المستخدم</string>
     <string name="user_rank_description">تلعب رتبة المستخدم دورًا في مكافآتك اليومية من Actifit، بالإضافة إلى توفير وصول إضافي إلى الأدوات والأشياء الرائعة حول نظام Actifit البيئي. &lt;br /&gt;</string>
-   <string name="user_rank_description_2">تصنيف المستخدم يحدد 25٪ من إجمالي قيمة المكافأة. يتم قياس نظام الترتيب من 0 (الأدنى) إلى 100+ ، ويتأثر بالعديد من العوامل ، مما يجعله نظامًا ديناميكيًا ، على النحو التالي:
+    <string name="user_rank_description_2">تصنيف المستخدم يحدد 25٪ من إجمالي قيمة المكافأة. يتم قياس نظام الترتيب من 0 (الأدنى) إلى 100+ ، ويتأثر بالعديد من العوامل ، مما يجعله نظامًا ديناميكيًا ، على النحو التالي:
       <li>كمية تفويض HIVE Power (HP)</li>
       <li>كمية رموز AFIT المحتفظ بها</li>
       <li>إجمالي المكافأة على النشاط</li>
       <li>عدد أنشطة الأيام العشرة الأخيرة</li>
       <li>كمية AFITX الموجودة على Hive-Engine وعلى BSC ، سواء كانت سائلة أو مقفلة كسيولة مقابل BNB أو BUSD</li>
    </string>
-   <string name="refer_friend">احصل على صديق</string>
-   <string name="referrals_note">Actifit تكافئك على إحالة الأصدقاء!</string>
-   <string name="voting_note">التصويت بالموافقة للمكافأة</string>
-   <string name="reply">رد</string>
-   <string name="socials_note">تواصل مع Actifit</string>
-   <string name="random_tip">نصيحة Actifit عشوائية</string>
-   <string name="rewards_note">اربح جوائز إضافية يوميًا</string>
-   <string name="Copy">نسخ</string>
-   <string name="Share">شارك</string>
-   <string name="successful_referrals_txt">الإحالات الناجحة</string>
-   <string name="referral_link_txt">رابط الإحالة الخاص بك</string>
+    <string name="refer_friend">احصل على صديق</string>
+    <string name="referrals_note">Actifit تكافئك على إحالة الأصدقاء!</string>
+    <string name="voting_note">التصويت بالموافقة للمكافأة</string>
+    <string name="reply">رد</string>
+    <string name="socials_note">تواصل مع Actifit</string>
+    <string name="random_tip">نصيحة Actifit عشوائية</string>
+    <string name="rewards_note">اربح جوائز إضافية يوميًا</string>
+    <string name="Copy">نسخ</string>
+    <string name="Share">شارك</string>
+    <string name="successful_referrals_txt">الإحالات الناجحة</string>
+    <string name="referral_link_txt">رابط الإحالة الخاص بك</string>
     <string name="referral_title">انضم إلى Actifit الآن - مشروع Move2Earn الاجتماعي!</string>
-   <string name="referral_description">Actifit تكافئك على تتبع نشاطك اليومي ، وكسب أصول تشفير متعددة.</string>
-   <string name="post_title">اطلع على منشوري الجديد الرائع على actifit ، مشروع Move2Earn الاجتماعي!</string>
-   <string name="post_title_other">تحقق من هذا المنشور الرائع على actifit ، مشروع Move2Earn الاجتماعي!</string>
-   <string name="newbie_share_socials">لقد بدأت في استخدام هذا المشروع الرائع المسمى Actifit. تفقدها. إنه لأمر يستحق التحرك! #actifit @actifit_fitness</string>
-   <string name="post_description"></string>
-   <string name="referral_join_link">انضم اليوم وابدأ في الكسب الآن! _URL_</string>
-   <string name="copy_success">تم النسخ بنجاح!</string>
-   <string name="share_via">شارك عبر</string>
-   <string name="head_market">سوق</string>
-   <string name="daily_reward">&#127873;<br /> مكافأة يومية</string>
-   <string name="reward_claimed">تمت المطالبة<br /></string>
-   <string name="vote_action">تصويت بالموافقة</string>
-   <string name="daily_free_reward">مكافأة مجانية</string>
-   <string name="daily_5k_reward">مكافأة إضافية 5 آلاف</string>
-   <string name="daily_7k_reward">مكافأة إضافية 7 آلاف</string>
-   <string name="daily_10k_reward">مكافأة إضافية 10 آلاف</string>
+    <string name="referral_description">Actifit تكافئك على تتبع نشاطك اليومي ، وكسب أصول تشفير متعددة.</string>
+    <string name="post_title">اطلع على منشوري الجديد الرائع على actifit ، مشروع Move2Earn الاجتماعي!</string>
+    <string name="post_title_other">تحقق من هذا المنشور الرائع على actifit ، مشروع Move2Earn الاجتماعي!</string>
+    <string name="newbie_share_socials">لقد بدأت في استخدام هذا المشروع الرائع المسمى Actifit. تفقدها. إنه لأمر يستحق التحرك! #actifit @actifit_fitness</string>
+    <string name="post_description"></string>
+    <string name="referral_join_link">انضم اليوم وابدأ في الكسب الآن! _URL_</string>
+    <string name="copy_success">تم النسخ بنجاح!</string>
+    <string name="share_via">شارك عبر</string>
+    <string name="head_market">سوق</string>
+    <string name="daily_reward">&#127873;<br /> مكافأة يومية</string>
+    <string name="reward_claimed">تمت المطالبة<br /></string>
+    <string name="vote_action">تصويت بالموافقة</string>
+    <string name="daily_free_reward">مكافأة مجانية</string>
+    <string name="daily_5k_reward">مكافأة إضافية 5 آلاف</string>
+    <string name="daily_7k_reward">مكافأة إضافية 7 آلاف</string>
+    <string name="daily_10k_reward">مكافأة إضافية 10 آلاف</string>
     <string name="voting_on">التصويت</string>
-   <string name="select_option">الرجاء تحديد خيار أولاً</string>
-   <string name="voters_list">قائمة الناخبين</string>
-   <string name="reply_action">رد</string>
-   <string name="cancel_action">إلغاء</string>
-   <string name="reply_to">الرد على</string>
-   <string name="referrals_details">لكل عملية إحالة تشترك في Actifit باستخدام رابط الإحالة الخاص بك ، تكسب: &lt;br /&gt;&lt;ul&gt;&lt;li&gt;مبلغ AFIT لمرة واحدة يساوي 20٪ من مكافآت AFIT التي يكسبها الشخص الذي أحيلته عند التسجيل الناجح! (عادة 20 AFIT على الأقل) &lt;/li&gt;&lt;li&gt; حتى 35٪ من مكافآت تقرير Actifit الخاص بالشخص الذي أحيلته لمدة شهر واحد ، عبر جميع الرموز التي تتم مكافأتها (AFIT ، HIVE ، ...) &lt;/li&gt;&lt;/ul&gt;</string>
-   <string name="daily_rewards_description">يمكنك كسب مكافآت إضافية يومية من خلال النقر على أزرار المكافآت أدناه.</string>
-   <string name="free_daily_rewards_description">يمكن المطالبة بالمكافأة المجانية مرة واحدة يوميًا. احصل على مكافأة إضافية عشوائية تصل إلى 3 AFIT</string>
-   <string name="daily_5k_rewards_description">يتم فتحه عند الوصول إلى عدد 5000 نشاط. احصل على مكافأة إضافية عشوائية تصل إلى 5 AFIT</string>
-   <string name="daily_7k_rewards_description">يتم فتحه عند الوصول إلى عدد 7000 نشاط. احصل على مكافأة إضافية عشوائية تصل إلى 7 AFIT</string>
-   <string name="daily_10k_rewards_description">يتم فتحه عند الوصول إلى عدد 10000 نشاط. احصل على مكافأة إضافية عشوائية تصل إلى 10 AFIT</string>
-   <string name="reward_already_claimed">لقد استرددت هذه المكافأة بالفعل اليوم! يمكنك القيام بذلك مرة أخرى غدا.</string>
-   <string name="bold_container" translatable="false">&lt;b&gt; _TEXT_ &lt;/b&gt;</string>
-   <string name="ad_reward_success">لقد تم تكليفك بنجاح بمكافأة _VAL_ رموز AFIT!</string>
-   <string name="not_eligible">لا يحق لك الحصول على هذه المكافأة حتى الآن</string>
-   <string name="rewards_processing"> دورة المكافآت جارية - توزيع المكافآت </string>
-   <string name="not_enough_afit_balance">ليس لديك رصيد AFIT كافٍ لشراء</string>
+    <string name="select_option">الرجاء تحديد خيار أولاً</string>
+    <string name="voters_list">قائمة الناخبين</string>
+    <string name="reply_action">رد</string>
+    <string name="cancel_action">إلغاء</string>
+    <string name="reply_to">الرد على</string>
+    <string name="referrals_details">لكل عملية إحالة تشترك في Actifit باستخدام رابط الإحالة الخاص بك ، تكسب: &lt;br /&gt;&lt;ul&gt;&lt;li&gt;مبلغ AFIT لمرة واحدة يساوي 20٪ من مكافآت AFIT التي يكسبها الشخص الذي أحيلته عند التسجيل الناجح! (عادة 20 AFIT على الأقل) &lt;/li&gt;&lt;li&gt; حتى 35٪ من مكافآت تقرير Actifit الخاص بالشخص الذي أحيلته لمدة شهر واحد ، عبر جميع الرموز التي تتم مكافأتها (AFIT ، HIVE ، ...) &lt;/li&gt;&lt;/ul&gt;</string>
+    <string name="daily_rewards_description">يمكنك كسب مكافآت إضافية يومية من خلال النقر على أزرار المكافآت أدناه.</string>
+    <string name="free_daily_rewards_description">يمكن المطالبة بالمكافأة المجانية مرة واحدة يوميًا. احصل على مكافأة إضافية عشوائية تصل إلى 3 AFIT</string>
+    <string name="daily_5k_rewards_description">يتم فتحه عند الوصول إلى عدد 5000 نشاط. احصل على مكافأة إضافية عشوائية تصل إلى 5 AFIT</string>
+    <string name="daily_7k_rewards_description">يتم فتحه عند الوصول إلى عدد 7000 نشاط. احصل على مكافأة إضافية عشوائية تصل إلى 7 AFIT</string>
+    <string name="daily_10k_rewards_description">يتم فتحه عند الوصول إلى عدد 10000 نشاط. احصل على مكافأة إضافية عشوائية تصل إلى 10 AFIT</string>
+    <string name="reward_already_claimed">لقد استرددت هذه المكافأة بالفعل اليوم! يمكنك القيام بذلك مرة أخرى غدا.</string>
+    <string name="bold_container" translatable="false">&lt;b&gt; _TEXT_ &lt;/b&gt;</string>
+    <string name="ad_reward_success">لقد تم تكليفك بنجاح بمكافأة _VAL_ رموز AFIT!</string>
+    <string name="not_eligible">لا يحق لك الحصول على هذه المكافأة حتى الآن</string>
+    <string name="rewards_processing"> دورة المكافآت جارية - توزيع المكافآت </string>
+    <string name="not_enough_afit_balance">ليس لديك رصيد AFIT كافٍ لشراء</string>
     <string name="logout_confirmation">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
-   <string name="gadgets_description">تتيح لك الأدوات الافتراضية زيادة أرباحك اليومية. من خلال شراء وتنشيط الأدوات ، يمكنك كسب أنواع إضافية متنوعة من المكافآت لنفسك (أو لصديقك) عبر مكافآت Actifit.</string>
+    <string name="gadgets_description">تتيح لك الأدوات الافتراضية زيادة أرباحك اليومية. من خلال شراء وتنشيط الأدوات ، يمكنك كسب أنواع إضافية متنوعة من المكافآت لنفسك (أو لصديقك) عبر مكافآت Actifit.</string>
     <string name="ad_not_ready">الإعلان لم يكن جاهزًا بعد.</string>
     <string name="err_load_ad">خطأ في تحميل الإعلان</string>
     <string name="wave_hint_1">شارك تحديثًا سريعًا ...</string>
-   <string name="wave_preview">معاينة</string>
-   <string name="report_text_hint_1">صف نشاط يومك باستخدام محتوى أصلي في بضع جمل قليلة. كلما زاد عدد المشاركين ، زاد المرح!</string>
-   <string name="report_text_hint_2">ماذا فعلت اليوم؟</string>
-   <string name="report_text_hint_3">هل لديك محتوى رائع للمشاركة؟</string>
-   <string name="report_text_hint_4">كلما كان المحتوى الذي تكتبه أكثر أصالة، زادت احتمالية المكافآت!</string>
-   <string name="report_text_hint_5">هل تجاوزت بعض المعالم اليوم؟ أخبر العالم عنها!</string>
-   <string name="report_text_hint_6">كيف يسير رحلة لياقتك؟ شاركها مع مستخدمي Actifit الآخرين</string>
-   <string name="report_text_hint_7">هل حصلت على صور رائعة من سيرك / ركضك / تمرينك / ...؟ هيا بنا</string>
-   <string name="report_text_hint_count" translatable="false">7</string>
-   <string name="survey_vote">صوت</string>
-   <string name="video_upload_3speak">تحميل الفيديو</string>
-   <string name="uploaded_vids_list">قائمة الفيديوهات المرفوعة</string>
-   <string name="status">الحالة</string>
-   <string name="size">الحجم</string>
-   <string name="duration">المدة</string>
-   <string name="filename">اسم الملف</string>
-   <string name="title">العنوان</string>
-   <string name="play_vid">تشغيل</string>
-   <string name="stop_vid">إيقاف</string>
-   <string name="choose_file">اختر الفيديو</string>
-   <string name="record_video">تسجيل</string>
-   <string name="add_vid_to_post">إضافة إلى المنشور</string>
-   <string name="mark_vid_published">وضع علامة على المنشور</string>
-   <string name="submit_video">إرسال الفيديو</string>
-   <string name="upload_new_vid">تحميل فيديو جديد</string>
-   <string name="no_vids_found">لم يتم العثور على أي فيديوهات للمستخدم</string>
-   <string name="submit_vid">إرسال الفيديو</string>
-   <string name="delete_vid">حذف</string>
-   <string name="video_deleted_success">تم حذف الفيديو بنجاح!</string>
-   <string name="submit_vid_success">تم إرسال الفيديو! قم بتحديث قائمة الفيديوهات للتأكد من حالة الاستعداد للنشر.</string>
-   <string name="survey_reward_temp">مشاركتك في استطلاعات Actifit يسمح لك بكسب AFIT إضافي. هناك مكافأة لمرة واحدة _REWARD_ للإجابة على هذا الاستطلاع. لا يوجد إجابة صحيحة أو خاطئة.</string>
-   <string name="Now">الآن</string>
-   <string name="sync_steps">مزامنة خطواتك من Fitbit</string>
-   <string name="defaultVoteWeight">النسبة المئوية الافتراضية للتصويت</string>
-   <string name="defaultVoteValueNotice">القيمة 0 تشير إلى عدم وجود قيمة افتراضية</string>
-   <string name="add_10">+10%</string>
-   <string name="sub_10">-10%</string>
-   <string name="free_signup_links">روابط التسجيل المجانية!</string>
-   <string name="available_free_signups">روابط التسجيل المجانية المتاحة</string>
-   <string name="free_link">رابط التسجيل</string>
-   <string name="Claim_links">مطالبة التسجيلات المجانية</string>
-   <string name="free_signup_links_desc">بمجرد إكمال 5 تقارير نشاط مكافأة Actifit، تصبح مؤهلاً لمطالبة 5 روابط تسجيل إحالة مجانية لمشاركتها مع أصدقائك. بعد النضوب والاكتمال 5 تقارير نشاط مكافأة أخرى، يمكنك المطالبة مرة أخرى 5 روابط تسجيل مجانية أخرى.</string>
-   <string name="for_rewards">لكسب المكافآت.</string>
-   <string name="confirm_proceed">هل تريد النشر على أي حال؟</string>
-   <string name="translation_header">محتوى مترجم تلقائيًا. انقر لعرض الأصل.</string>
-   <string name="fa_wallet_solid" translatable="false">\uf555</string>
-   <string name="fa_exclamation_circle_solid" translatable="false">\uf06a</string>
-   <string name="fa_history_solid" translatable="false">\uf1da</string>
-   <string name="fa_coins_solid" translatable="false">\uf51e</string>
-   <string name="fa_file" translatable="false">\uf15b</string>
-   <string name="noPostFound">لم يتم العثور على أي منشور تم تقديمه في هذا التاريخ</string>
-   <string name="tweet_button">مكافأة التغريدة</string>
-   <string name="fitbit_sync_btn" translatable="false">\uf0ed</string>
-   <string name="switch_settings_btn" translatable="false">\uf362</string>
+    <string name="wave_preview">معاينة</string>
+    <string name="report_text_hint_1">صف نشاط يومك باستخدام محتوى أصلي في بضع جمل قليلة. كلما زاد عدد المشاركين ، زاد المرح!</string>
+    <string name="report_text_hint_2">ماذا فعلت اليوم؟</string>
+    <string name="report_text_hint_3">هل لديك محتوى رائع للمشاركة؟</string>
+    <string name="report_text_hint_4">كلما كان المحتوى الذي تكتبه أكثر أصالة، زادت احتمالية المكافآت!</string>
+    <string name="report_text_hint_5">هل تجاوزت بعض المعالم اليوم؟ أخبر العالم عنها!</string>
+    <string name="report_text_hint_6">كيف يسير رحلة لياقتك؟ شاركها مع مستخدمي Actifit الآخرين</string>
+    <string name="report_text_hint_7">هل حصلت على صور رائعة من سيرك / ركضك / تمرينك / ...؟ هيا بنا</string>
+    <string name="report_text_hint_count" translatable="false">7</string>
+    <string name="survey_vote">صوت</string>
+    <string name="video_upload_3speak">تحميل الفيديو</string>
+    <string name="uploaded_vids_list">قائمة الفيديوهات المرفوعة</string>
+    <string name="status">الحالة</string>
+    <string name="size">الحجم</string>
+    <string name="duration">المدة</string>
+    <string name="filename">اسم الملف</string>
+    <string name="title">العنوان</string>
+    <string name="play_vid">تشغيل</string>
+    <string name="stop_vid">إيقاف</string>
+    <string name="choose_file">اختر الفيديو</string>
+    <string name="record_video">تسجيل</string>
+    <string name="add_vid_to_post">إضافة إلى المنشور</string>
+    <string name="mark_vid_published">وضع علامة على المنشور</string>
+    <string name="submit_video">إرسال الفيديو</string>
+    <string name="upload_new_vid">تحميل فيديو جديد</string>
+    <string name="no_vids_found">لم يتم العثور على أي فيديوهات للمستخدم</string>
+    <string name="submit_vid">إرسال الفيديو</string>
+    <string name="delete_vid">حذف</string>
+    <string name="video_deleted_success">تم حذف الفيديو بنجاح!</string>
+    <string name="submit_vid_success">تم إرسال الفيديو! قم بتحديث قائمة الفيديوهات للتأكد من حالة الاستعداد للنشر.</string>
+    <string name="survey_reward_temp">مشاركتك في استطلاعات Actifit يسمح لك بكسب AFIT إضافي. هناك مكافأة لمرة واحدة _REWARD_ للإجابة على هذا الاستطلاع. لا يوجد إجابة صحيحة أو خاطئة.</string>
+    <string name="Now">الآن</string>
+    <string name="sync_steps">مزامنة خطواتك من Fitbit</string>
+    <string name="defaultVoteWeight">النسبة المئوية الافتراضية للتصويت</string>
+    <string name="defaultVoteValueNotice">القيمة 0 تشير إلى عدم وجود قيمة افتراضية</string>
+    <string name="add_10">+10%</string>
+    <string name="sub_10">-10%</string>
+    <string name="free_signup_links">روابط التسجيل المجانية!</string>
+    <string name="available_free_signups">روابط التسجيل المجانية المتاحة</string>
+    <string name="free_link">رابط التسجيل</string>
+    <string name="Claim_links">مطالبة التسجيلات المجانية</string>
+    <string name="free_signup_links_desc">بمجرد إكمال 5 تقارير نشاط مكافأة Actifit، تصبح مؤهلاً لمطالبة 5 روابط تسجيل إحالة مجانية لمشاركتها مع أصدقائك. بعد النضوب والاكتمال 5 تقارير نشاط مكافأة أخرى، يمكنك المطالبة مرة أخرى 5 روابط تسجيل مجانية أخرى.</string>
+    <string name="for_rewards">لكسب المكافآت.</string>
+    <string name="confirm_proceed">هل تريد النشر على أي حال؟</string>
+    <string name="translation_header">محتوى مترجم تلقائيًا. انقر لعرض الأصل.</string>
+    <string name="fa_wallet_solid" translatable="false">\uf555</string>
+    <string name="fa_exclamation_circle_solid" translatable="false">\uf06a</string>
+    <string name="fa_history_solid" translatable="false">\uf1da</string>
+    <string name="fa_coins_solid" translatable="false">\uf51e</string>
+    <string name="fa_file" translatable="false">\uf15b</string>
+    <string name="noPostFound">لم يتم العثور على أي منشور تم تقديمه في هذا التاريخ</string>
+    <string name="tweet_button">مكافأة التغريدة</string>
+    <string name="fitbit_sync_btn" translatable="false">\uf0ed</string>
+    <string name="switch_settings_btn" translatable="false">\uf362</string>
     <string name="extra_beneficiary">المستفيد الإضافي</string>
     <string name="setting_dark_mode_label">الوضع الليلي</string>
     <string name="icon_sun_desc">أيقونة الشمس</string>
@@ -558,4 +558,21 @@
     <string name="generate_workout_plan">إنشاء خطة تمرين</string>
     <string name="workout_plan_overview">نظرة عامة على خطة التمرين</string>
     <string name="exercises">التمارين</string>
+    <string name="btn_ai_suggest">الذكاء الاصطناعي</string>
+    <string name="query_option">استعلام</string>
+    <string name="summarize_option">تلخيص</string>
+    <string name="expand_option">توسيع</string>
+    <string name="ai_popup_title">مساعد الذكاء الاصطناعي</string>
+    <string name="ai_hint_input">أدخل المحتوى هنا.</string>
+    <string name="ai_preview_placeholder">سيظهر رد الذكاء الاصطناعي هنا.</string>
+    <string name="ai_suggest">الذكاء الاصطناعي</string>
+    <string name="ai_preview_empty_warning">يرجى إدخال بعض النص أولاً.</string>
+    <string name="ai_is_thinking">[الذكاء الاصطناعي يفكر...]</string>
+    <string name="ai_error_prefix">[خطأ في الذكاء الاصطناعي] </string>
+    <string name="ai_no_valid_response">لا يوجد رد صالح من الذكاء الاصطناعي لقبوله.</string>
+    <string name="spinner_action_none">لا شيء</string>
+    <string name="spinner_action_summarize">تلخيص</string>
+    <string name="spinner_action_expand">توسيع</string>
+    <string name="post_button">نشر</string>
+
 </resources>
