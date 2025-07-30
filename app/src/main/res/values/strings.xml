@@ -574,6 +574,7 @@
     <string name="spinner_action_summarize">Summarize</string>
     <string name="spinner_action_expand">Expand</string>
     <string name="post_button">Post</string>
+    <string name="regenerate_workout_free">REGENERATE WORKOUT (FREE)</string>
 
 </resources>
 
